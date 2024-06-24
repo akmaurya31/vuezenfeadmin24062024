@@ -1,0 +1,102 @@
+.login_inputfield{
+    border: 0 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 0 29px 0 hsla(240,5%,41%,.12) !important;
+    font-size: 15px !important;
+    padding: 18px 48px!important;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    color: #202020 !important;
+}
+
+.input_icons{
+    position: absolute !important;
+    left: 20px !important;
+    top: 5px !important;
+    text-align: center !important;
+    border-radius: 3px 0 0 3px !important;
+    font-size: 20px !important;
+    color: #afafaf9e !important;
+    background: none !important;
+    width: 0 !important;
+}
+
+.login_button{
+    background: linear-gradient(90deg,#01c3ccdb,#2a76e8f2) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    margin-top: 10px !important;
+    padding: 16px 0 !important;
+}
+
+
+.register_inputfield{
+    border: 0 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 0 29px 0 hsla(240,5%,41%,.12) !important;
+    display: block !important;
+    font-size: 15px !important;
+    margin-bottom: 0px !important;
+    padding: 13px 20px !important;
+    width: 100% !important;
+}
+
+.country_mobile{
+    padding: 0px 60px !important;
+}
+
+::placeholder{
+    color: #BBBBBB !important;
+}
+
+/* input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255) inset !important;
+} */
+
+.forgot_password_submitbtn{
+    background: linear-gradient(90deg,#01c3ccdb,#2a76e8f2) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    margin-top: 0px !important;
+    /* line-height: 0px !important; */
+    padding: 15px 0 !important;
+}
+
+.disabled-button{
+    background: linear-gradient(90deg,#939393,#415471) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    color: #fff !important;
+    margin-top: 00px !important;
+    padding: 15px 0 !important;
+    /* padding: 14px 0 !important; */
+    /* line-height: 0px !important; */
+}
+
+.recaptcha_style{
+margin-bottom: 20px !important;
+}
+
+.forgot_inputfield{
+    border: 0 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 0 29px 0 hsla(240,5%,41%,.12) !important;
+    display: block !important;
+    font-size: 15px !important;
+    margin-bottom: 5px !important;
+    /* padding: 18px 25px !important; */
+    width: 100% !important;
+}
+/* //212 16:32 */
+
+
+
+/* @media (max-width: 360px) {
+    .register .recaptch_styled .rc-anchor-light.rc-anchor-normal,
+    .register .recaptch_styled .rc-anchor-light.rc-anchor-compact {
+      width: 250px !important;
+    }
+  } */

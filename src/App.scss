@@ -1,0 +1,147 @@
+$light-black: #4d4d4d;
+$dark-blue: #032140;
+
+
+// Button styles
+@mixin editbutton ($margin, $backgroundColor, $color, $border, $padding) {
+  background-color: $backgroundColor;
+  color: $color;
+  padding: 20px 40px; 
+  border-radius: 5px;
+  border: $border;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: $margin;
+  padding: $padding;
+  transition: 0.5s;
+}
+
+.button {
+  @include editbutton (0, $dark-blue, #fff, 1px solid $dark-blue, 20px 40px);
+  @media screen and (max-width: 1400px) {
+    padding: 10px;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 15px 20px;
+    font-size: 13px;
+  }
+  &:hover{
+    background-color: transparent;
+    color: $dark-blue;
+    border: 1px solid $dark-blue;
+  }
+}
+.light-blue-button {
+  @include editbutton (0, #2194E4, #fff, none, 20px 40px);
+}
+.light-white-button {
+  @include editbutton (0, #fff, $dark-blue, 1px solid $dark-blue, 20px 40px);
+  @media screen and (max-width: 1400px) {
+    padding: 10px;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 15px 20px;
+    font-size: 13px;
+  }
+  &:hover{
+    background-color: $dark-blue;
+    color: #fff;
+  }
+}
+.product-button {
+  @include editbutton (0, $dark-blue, #fff, 1px solid $dark-blue, 15px 10px);
+  @media screen and (max-width: 1400px) {
+    padding: 10px;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  &:hover{
+    background-color: transparent;
+    color: $dark-blue;
+    border: 1px solid $dark-blue;
+  }
+}
+.product-light-white-button {
+  @include editbutton (0, #fff, $dark-blue, 1px solid $dark-blue, 15px 10px);
+  @media screen and (max-width: 1400px) {
+    padding: 10px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 10px 0;
+  }
+  &:hover{
+    background-color: $dark-blue;
+    color: #fff;
+  }
+}
+
+.container{
+  // @media screen and (min-width: 1700px) {
+  //   max-width: 1600px;
+  //   min-width: 1600px;
+  // }
+}
+.mr-20{
+  margin-right: 20px;
+  @media screen and (max-width: 1200px) {
+    margin-right: 10px;
+}
+}
+.mr-30{
+  margin-right: 30px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+.mb-30{
+  margin-bottom: 30px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.relative{
+  position: relative;
+}
+.flex{
+  display: flex;
+}
+.only-mobile{
+  display: none;
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
+}
+.flex-aligncenter{
+  display: flex;
+  align-items: center;
+}
+.flex-flexwrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.css-1ex1afd-MuiTableCell-root {
+  border: 0 !important;
+}
+
+.MuiTableCell-root {
+  border: 0 !important;
+}
+
+// .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){
+//   height: 250px !important;
+// }
+
+// .ck.ck-toolbar.ck-toolbar_grouping>.ck-toolbar__items{
+//   height: 60px !important;
+// }
+
+// .ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners {
+//   border-radius: var(--ck-border-radius);
+//   border-top-left-radius: 0;
+//   border-top-right-radius: 0;
+//   height: 250px !important;
+// }

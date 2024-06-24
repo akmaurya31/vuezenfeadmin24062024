@@ -1,0 +1,285 @@
+.admin-main-product{
+    display: flex !important;
+    border: 0 !important;
+    justify-content: space-between;
+    align-items: top;
+    align-items: flex-start;
+}
+.admin-main-product-accordion{
+    width: 100%;
+    margin-right: 50px !important;
+    padding: 8px 0;
+    box-shadow: none;
+    border: 1px solid #e2e2e2;
+    box-shadow: none !important;
+}
+.admin-view-edit{
+    background-color: rgb(33, 54, 124);
+    padding: 15px 15px;
+    border-radius: 5px;
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.add-button{
+    padding: 15px 20px;
+    border: 0;
+    background-color: #032140;
+    color: #fff;
+    cursor: pointer;
+    width: 250px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+.beautiful-boxes-main{
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    img{
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+}
+.beautiful-buttons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.beautiful-buttons .del-button{
+    font-size: 18px;
+    padding: 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.1215686275);
+    background-color: #dd4646;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 5px;
+    margin: 0;
+}
+.beautiful-buttons .edit-button{
+    font-size: 18px;
+    padding: 5px 0;
+    border: 1px solid #0000001f;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 5px;
+    margin: 0;
+}
+.ui-edit-button{
+    font-size: 14px;
+    padding: 15px 8px;
+    border: 1px solid #0000001f;
+    background-color: #032140;
+    color: #fff;
+    cursor: pointer;
+    width: 120px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    &:hover {
+      background-color: lightgray;
+    }
+}
+.social-links-button{
+    font-size: 18px;
+    padding: 10px 10px;
+    border: 1px solid #0000001f;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-left: 10px;
+}
+.footer-sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+}
+.footer-sec-main{
+    li{
+        input{
+            font-size: 18px;
+            padding: 10px 10px;
+            border: 1px solid #0000001f;
+            background-color: #fff;
+            color: #000;
+            width: 250px;
+            border-radius: 5px;
+            margin-top: 0;
+            margin-left: 10px;
+        }
+    }
+}
+.ui-heading{
+    font-size: 24px;
+}
+.ui-para{
+    font-size: 16px;
+    h5{
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+.ui-slug{
+    padding-bottom: 10px;
+    font-size: 15px;
+    color: #4d4d4d;
+}
+.zipcodes-style{
+    padding: 8px 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.button-switch{
+    display: flex;
+    align-items: baseline
+}
+.admin-name{
+    font-size: 20px;
+    color: #4d4d4d;
+
+}
+.logform-input{
+    margin-bottom: 20px;
+}
+.multi-select{
+    width: 100%;
+    margin: 10px 0;
+}
+.data-table-extensions {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.update-button{
+    padding: 12px 20px;
+    border: 0;
+    background-color: #032140;
+    color: #fff;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.add-new-varient{
+    padding: 12px 20px;
+    border: 0;
+    background-color: #032140;
+    color: #fff;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.all-inputs-main{
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    gap: 10px;
+    align-items: flex-start;
+
+    input{
+        padding: 10px;
+        border: 1px solid #d6d6d6;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    textarea{
+        padding: 10px;
+        border: 1px solid #d6d6d6;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}
+.text-input-main{
+    h5{
+        font-size: 15px;
+        font-weight: 500;
+        color: #4d4d4d;
+    }
+}
+
+.frame-type-main {
+    select{
+        padding: 10px;
+        border: 1px solid #d6d6d6;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    
+}
+.choose-file{
+    padding: 10px;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.upload-image-fixed{
+    width: 200px;
+    height: 80px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+        img{
+        width: 100%;
+    }
+}
+
+.ui-para{
+    textarea{
+        padding: 12px 15px;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #00000026;
+    margin-right: 20px;
+    }
+}
+.ui-para{
+    input{
+        padding: 12px 15px;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #00000026;
+    margin-right: 20px;
+    }
+}
+
+// .css-1ex1afd-MuiTableCell-root{
+//     border: 0 !important;
+// }
+.css-15v22id-MuiAccordionDetails-root {
+    padding: 10px 0 !important;
+}
+
+.MuiTableCell-root {
+    border: 0 !important;
+}

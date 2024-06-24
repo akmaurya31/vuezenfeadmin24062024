@@ -1,0 +1,61 @@
+.topfooter {
+  background: #053f72 !important;
+}
+
+form.row.g-3.contacthomepage {
+  background: #f7f7f7;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 21px;
+  padding-top: 10px;
+  border-radius: 10px;
+  border: 3px dotted #0059a7;
+}
+
+.btn.theme-bg.try_theme_btn {
+  background: #0157a2;
+  padding: 12px 30px;
+  border-radius: 5px;
+}
+
+.msl {
+  padding: 12px 15px !important;
+  font-size: 15px !important;
+  border-radius: 5px !important;
+  border: 1px solid #00000026 !important;
+  margin-right: 20px !important;
+  /* margin-bottom: 20px !important; */
+  overflow: hidden;
+  outline: none;
+  cursor: text;
+  transition: border-radius 0.2s;
+}
+.msl-input {
+  outline: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.msl-actions {
+  position: absolute;
+  right: 25px !important;
+  top: 25px !important;
+  transform: translatey(-50%);
+}
+
+.square-input {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Should be the same as width for a square shape */
+  text-align: center;
+  font-size: 20px; /* Adjust the font size as needed */
+  border-radius: 10px;
+}
+
+/* Ensure only one digit can be entered */
+.square-input[type="number"]::-webkit-inner-spin-button,
+.square-input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.square-input[type="number"] {
+  -moz-appearance: textfield;
+}

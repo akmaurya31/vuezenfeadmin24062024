@@ -1,0 +1,74 @@
+ul li{ list-style: none;}
+a{ text-decoration: none;}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    display: block !IMPORTANT;
+}
+
+section.pagecover {
+    background: #053f72;
+    text-align: center;
+    padding: 49px;
+    margin-bottom: 37px;
+    color: #fff;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background: white !IMPORTANT;
+}
+
+.btn-login a {
+    border: 1px solid #ccc;
+    text-align: center;
+    font-weight: bold;
+}
+
+li.nav-item {
+    margin-right: 10px;
+}
+
+li.nav-item.reg.btn-login a {
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 14px 0px;
+    color: #000;
+    width: 120px;
+}
+li.nav-item.login.btn-login a {
+    padding: 7px 27px;
+}
+
+ a.nav-link {
+    font-weight: bold;
+}
+
+
+li.nav-item.login.btn-login a {
+    background: #0059a7;
+    color: #fff;
+    border-radius: 5px;
+    padding: 14px 40px;
+}
+
+li.nav-item.reg.btn-login a:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.sbc {
+    border: 2px solid #dbd2d2;
+    padding: 2px 15px;
+    border-radius: 20px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+
+.clint-img {
+    width: 50px !important;
+    height: 50px !IMPORTANT;
+    border-radius: 50%;
+    margin: 12px 0px;
+}
