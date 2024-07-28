@@ -18,7 +18,7 @@ function DashbordLayout() {
     <div>
       {viewNavbar && <Header />}
       <Sidebar />
-      <main className="app-content">
+      <main className="app-content" style={{paddingBottom:81}}>
         <Outlet />
       </main>
     </div>

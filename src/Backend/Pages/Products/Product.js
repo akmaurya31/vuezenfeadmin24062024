@@ -591,6 +591,8 @@ const Product = () => {
       </div>
       <div>
         <Form>
+        <Row>
+        <Col md={6}>
           <Form.Group>
             <Form.Label>Title</Form.Label>
             <Form.Control
@@ -605,7 +607,7 @@ const Product = () => {
               <div style={{ color: "red" }}>{formik.errors.title}</div>
             ) : null}
           </Form.Group>
-
+          </Col><Col md={6}>
           <Form.Group>
             <Form.Label>Description</Form.Label>
             {/* <Form.Control
@@ -631,6 +633,9 @@ const Product = () => {
               <div style={{ color: "red" }}>{formik.errors.description}</div>
             ) : null}
           </Form.Group>
+        </Col>
+
+         <Col md={6}>
           <Form.Group>
             <Form.Label>Summary</Form.Label>
             <Form.Control
@@ -646,7 +651,7 @@ const Product = () => {
               <div style={{ color: "red" }}>{formik.errors.summary}</div>
             ) : null}
           </Form.Group>
-
+          </Col><Col md={6}>
           <Form.Group>
             <Form.Label>Sku</Form.Label>
             <Form.Control
@@ -661,7 +666,8 @@ const Product = () => {
               <div style={{ color: "red" }}>{formik.errors.sku}</div>
             ) : null}
           </Form.Group>
-
+          </Col>
+         <Col md={6}>
           <Form.Group>
             <Form.Label>Model Number</Form.Label>
             <Form.Control
@@ -676,7 +682,8 @@ const Product = () => {
               <div style={{ color: "red" }}>{formik.errors.modelNumber}</div>
             ) : null}
           </Form.Group>
-
+          </Col>
+          <Col md={6}>
           <Form.Group controlId="formBasicImage">
             <Form.Label>Choose Image</Form.Label>
             <input
@@ -697,24 +704,9 @@ const Product = () => {
               <div style={{ color: "red" }}>{formik.errors.selectedImage}</div>
             )}
           </Form.Group>
-
-          <Form.Group>
-            <Form.Label>Select Gender</Form.Label>
-            <MultiSelect
-              className="multi-select"
-              onChange={handleOnchangeGender}
-              options={options}
-              value={formik.values.genderInCategory}
-              style={{ width: "100%" }}
-            />
-            {formik.touched.genderInCategory &&
-              formik.errors.genderInCategory && (
-                <div style={{ color: "red" }}>
-                  {formik.errors.genderInCategory}
-                </div>
-              )}
-          </Form.Group>
-
+          </Col>
+         
+          <Col md={6}>
           <Form.Group>
             <Form.Label>Category</Form.Label>
             <Form.Select
@@ -739,7 +731,26 @@ const Product = () => {
               <div style={{ color: "red" }}>{formik.errors.category}</div>
             ) : null}
           </Form.Group>
-
+          </Col>
+          <Col md={6}>
+          <Form.Group>
+            <Form.Label>Select Sub Category</Form.Label>
+            <MultiSelect
+              className="multi-select"
+              onChange={handleOnchangeGender}
+              options={options}
+              value={formik.values.genderInCategory}
+              style={{ width: "100%" }}
+            />
+            {formik.touched.genderInCategory &&
+              formik.errors.genderInCategory && (
+                <div style={{ color: "red" }}>
+                  {formik.errors.genderInCategory}
+                </div>
+              )}
+          </Form.Group>
+          </Col>
+          <Col md={6}>
           <Form.Group>
             <Form.Label>Material</Form.Label>
             <Form.Select
@@ -764,8 +775,9 @@ const Product = () => {
               <div style={{ color: "red" }}>{formik.errors.material}</div>
             ) : null}
           </Form.Group>
+          </Col>
 
-          <Form.Group>
+          {/* <Form.Group>
             <Form.Label>Shape</Form.Label>
             <Form.Select
               value={values.shape}
@@ -788,9 +800,9 @@ const Product = () => {
             {formik.touched.shape && formik.errors.shape ? (
               <div style={{ color: "red" }}>{formik.errors.shape}</div>
             ) : null}
-          </Form.Group>
+          </Form.Group> */}
 
-          <Form.Group>
+          {/* <Form.Group>
             <Form.Label>Weight Group</Form.Label>
             <Form.Select
               value={values.weight}
@@ -810,8 +822,8 @@ const Product = () => {
             {formik.touched.weight && formik.errors.weight ? (
               <div style={{ color: "red" }}>{formik.errors.weight}</div>
             ) : null}
-          </Form.Group>
-
+          </Form.Group> */}
+        <Col md={6}>
           <Form.Group>
             <Form.Label>Size</Form.Label>
             <Form.Select
@@ -833,8 +845,8 @@ const Product = () => {
               <div style={{ color: "red" }}>{formik.errors.size}</div>
             ) : null}
           </Form.Group>
-
-          <Form.Group>
+          </Col>
+          {/* <Form.Group>
             <Form.Label>Frame Type</Form.Label>
             <Form.Select
               value={values.frame_type}
@@ -854,9 +866,9 @@ const Product = () => {
             {formik.touched.frame_type && formik.errors.frame_type ? (
               <div style={{ color: "red" }}>{formik.errors.frame_type}</div>
             ) : null}
-          </Form.Group>
+          </Form.Group> */}
 
-          <Form.Group>
+          {/* <Form.Group>
             <Form.Label>Frame Width</Form.Label>
             <Form.Control
               type="text"
@@ -869,9 +881,9 @@ const Product = () => {
             {formik.touched.frame_width && formik.errors.frame_width ? (
               <div style={{ color: "red" }}>{formik.errors.frame_width}</div>
             ) : null}
-          </Form.Group>
+          </Form.Group> */}
 
-          <Form.Group>
+          {/* <Form.Group>
             <Form.Label>Lens Width</Form.Label>
             <Form.Control
               type="text"
@@ -884,9 +896,9 @@ const Product = () => {
             {formik.touched.lens_width && formik.errors.lens_width ? (
               <div style={{ color: "red" }}>{formik.errors.lens_width}</div>
             ) : null}
-          </Form.Group>
+          </Form.Group> */}
 
-          <Form.Group>
+          {/* <Form.Group>
             <Form.Label>Lens Height</Form.Label>
             <Form.Control
               type="text"
@@ -899,9 +911,9 @@ const Product = () => {
             {formik.touched.lens_height && formik.errors.lens_height ? (
               <div style={{ color: "red" }}>{formik.errors.lens_height}</div>
             ) : null}
-          </Form.Group>
+          </Form.Group> */}
 
-          <Form.Group>
+          {/* <Form.Group>
             <Form.Label>Bridge Width</Form.Label>
             <Form.Control
               type="text"
@@ -914,9 +926,9 @@ const Product = () => {
             {formik.touched.bridge_width && formik.errors.bridge_width ? (
               <div style={{ color: "red" }}>{formik.errors.bridge_width}</div>
             ) : null}
-          </Form.Group>
+          </Form.Group> */}
 
-          <Form.Group>
+          {/* <Form.Group>
             <Form.Label>Temple Length</Form.Label>
             <Form.Control
               type="text"
@@ -929,7 +941,7 @@ const Product = () => {
             {formik.touched.temple_length && formik.errors.temple_length ? (
               <div style={{ color: "red" }}>{formik.errors.temple_length}</div>
             ) : null}
-          </Form.Group>
+          </Form.Group> */}
 
           {/* <h2>Product Variant</h2>
 
@@ -1015,6 +1027,7 @@ const Product = () => {
           >
             {loader ? <CircularLoader /> : "Add Product"}
           </Button>
+          </Row>
         </Form>
       </div>
     </div>

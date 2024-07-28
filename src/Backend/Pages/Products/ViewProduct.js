@@ -265,7 +265,7 @@ const ViewProduct = () => {
                 />
               </div>
 
-              <div className="text-input-main frame-type-main">
+              {/* <div className="text-input-main frame-type-main">
                 <h5>Frame Type</h5>
                 <select
                   placeholder="Select Frame Type"
@@ -281,7 +281,7 @@ const ViewProduct = () => {
                     </option>
                   ))}
                 </select>
-              </div>
+              </div> */}
 
               <div className="text-input-main">
                 <h5>Category (can't be edited here) </h5>
@@ -306,7 +306,7 @@ const ViewProduct = () => {
                 />
               </div>
 
-              <div className="text-input-main frame-type-main">
+              {/* <div className="text-input-main frame-type-main">
                 <h5>Shape</h5>
                 <select
                   placeholder="Select Shape"
@@ -325,7 +325,7 @@ const ViewProduct = () => {
                     );
                   })}
                 </select>
-              </div>
+              </div> */}
 
               <div className="text-input-main frame-type-main">
                 <h5>Material</h5>
@@ -367,7 +367,7 @@ const ViewProduct = () => {
             </div>
 
             <div>
-              <div className="text-input-main">
+              {/* <div className="text-input-main">
                 <h5>Frame Width</h5>
                 <input
                   type="number"
@@ -375,8 +375,8 @@ const ViewProduct = () => {
                   value={frameWidth}
                   onChange={(e) => setFrameWidth(e.target.value)}
                 />
-              </div>
-              <div className="text-input-main">
+              </div> */}
+              {/* <div className="text-input-main">
                 <h5>Lens Width</h5>
                 <input
                   type="number"
@@ -384,8 +384,8 @@ const ViewProduct = () => {
                   value={lensWidth}
                   onChange={(e) => setLensWidth(e.target.value)}
                 />
-              </div>
-              <div className="text-input-main">
+              </div> */}
+              {/* <div className="text-input-main">
                 <h5>Lens Height</h5>
                 <input
                   type="number"
@@ -393,8 +393,8 @@ const ViewProduct = () => {
                   value={lensHeight}
                   onChange={(e) => setLensHeight(e.target.value)}
                 />
-              </div>
-              <div className="text-input-main">
+              </div> */}
+              {/* <div className="text-input-main">
                 <h5>Bridge Width</h5>
                 <input
                   type="number"
@@ -402,8 +402,8 @@ const ViewProduct = () => {
                   value={bridgeWidth}
                   onChange={(e) => setBridgeWidth(e.target.value)}
                 />
-              </div>
-              <div className="text-input-main">
+              </div> */}
+              {/* <div className="text-input-main">
                 <h5>Temple Length</h5>
                 <input
                   type="number"
@@ -411,7 +411,7 @@ const ViewProduct = () => {
                   value={templeLength}
                   onChange={(e) => setTempleLength(e.target.value)}
                 />
-              </div>
+              </div> */}
             </div>
 
             <div>
