@@ -30,7 +30,7 @@ const Product = () => {
   const [selectedItems, setSelectedItems] = useState([]);
   const [loader, setLoader] = useState(false);
   const [size, setSize] = useState("");
-  const [frame_type, setFrameType] = useState("");
+  const [frame_type, setFrameType] = useState(null);
   const [color, setColor] = useState("");
   const [countryData, setCountryData] = useState([]);
 
@@ -437,19 +437,19 @@ const Product = () => {
       formdata.append("model_number", values.modelNumber);
       formdata.append("summary", values.summary);
       formdata.append("cat_id", values.category);
-      formdata.append("shape_id", values.shape);
+      formdata.append("shape_id", values.shape || 0);
       formdata.append("material_id", values.material);
       formdata.append("description", values.description);
       formdata.append("thumbnail_img", values.selectedImage);
       formdata.append("size_id", values.size);
-      formdata.append("frame_type_id", values.frame_type);
-      formdata.append("weight_group_id", values.weight);
+      formdata.append("frame_type_id", values.frame_type || 0);
+      formdata.append("weight_group_id", values.weight || 0);
       formdata.append("condition", "new");
-      formdata.append("frame_width", values.frame_width);
-      formdata.append("lens_width", values.lens_width);
-      formdata.append("lens_height", values.lens_height);
-      formdata.append("bridge_width", values.bridge_width);
-      formdata.append("temple_length", values.temple_length);
+      formdata.append("frame_width", values.frame_width || 0);
+      formdata.append("lens_width", values.lens_width || 0);
+      formdata.append("lens_height", values.lens_height || 0);
+      formdata.append("bridge_width", values.bridge_width || 0);
+      formdata.append("temple_length", values.temple_length || 0);
       for (let i = 0; i < values.genderInCategory.length; i++) {
         formdata.append(`gender[${i}]`, values.genderInCategory[i]);
       }
